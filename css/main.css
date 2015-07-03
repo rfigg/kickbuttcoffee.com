@@ -1,0 +1,580 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    padding-top: 15px;
+    background: black;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    background: white;
+/*    border-top: 10px solid black;*/
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    border-bottom: none;
+}
+
+.footer-container {
+    background: black;
+}
+
+
+#mobile-header a, #mobile-header a:hover, #mobile-header a:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+a.link-icon {
+    float: right;
+    margin-left: 5px;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: block;
+    margin-bottom: 10px;
+    padding: 6px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: .9em;
+
+    background: white;
+    color: black;
+}
+
+nav a:hover,
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0 0 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.bottom span {
+    display: none;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 0;
+    font-size: .69em;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.fluid {
+    clear: both;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: .5em;
+}
+
+.tagline {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    line-height: 14px;
+}
+
+.georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.red {
+    color: #FF0000;
+}
+.highlight {
+    background-color: yellow;
+}
+.normal-weight {
+    font-weight: normal;
+}
+
+.tight-lines {
+    line-height: 1em;
+}
+.med-lines {
+    line-height: 1.3em;
+}
+
+.centered {
+    text-align: center;
+}
+.righted {
+    text-align: right;
+}
+
+.blocked {
+    display: block;
+}
+
+.smaller {
+    font-size: .9em;
+}
+.smallerer {
+    font-size: .8em;
+}
+.larger {
+    font-size: 1.2em;
+}
+.no-top-margin {
+    margin-top: 0;
+}
+.no-bottom-margin {
+    margin-bottom: 0;
+}
+
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.half-width {
+    width: 50%;
+}
+.max-200 {
+    max-width: 200px;
+}
+.max-300 {
+    max-width: 300px;
+}
+.max-650 {
+    max-width: 650px;
+}
+.margin-1 {
+    margin: 1em;
+}
+
+
+.caption {
+    font-size: .7em;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25em;
+}
+
+.embed-container { 
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cal-embed-container {
+    position: relative;
+    padding-bottom: 25em;
+    height: 0;
+    overflow: hidden;
+    width: 85%;
+    max-width: 550px;
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cal-embed-container iframe, .cal-embed-container object, .cal-embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bottom {
+    font-weight: bold;
+}
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 40em) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+/*    nav li {
+        float: left;
+        width: auto;
+        margin: 0;
+        padding: 5px 6px;
+        line-height: 1em;
+        font-size: .9em;
+    } */
+
+/*    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+        border-right: none;
+    }*/
+
+    nav {
+/*        width: 35em;
+        margin-left: auto;
+        margin-right: auto;*/
+        text-align: center;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+
+
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+
+@media only screen and (min-width: 727px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    html {
+        background-color: transparent;
+    }
+
+    .wrapper {
+        width: 727px; /* 1140px - 10% for margins */
+        margin: 0 36px;
+    }
+
+    .overall-container {
+        width: 799px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 64px;
+    }
+
+
+    .bottom {
+        margin-bottom: 1.5em;
+    }
+    .bottom p {
+        display: inline;
+    }
+    .bottom span {
+        display: inline;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .footer-container {
+        background: inherit;
+    }
+
+    body {
+        background: black;
+        background-attachment: fixed;
+        background-image: url(http://kickbuttcoffee.com/2013/kick_butt_coffee_austin_texas_yes.jpg);
+    }
+
+    html {
+        padding-top: 45px;
+    }
+
+    .title {
+        margin-top: 1em;
+    }
+
+    .tagline {
+        margin-bottom: 20px;
+    }
+
+    .caption {
+        font-size: .9em;
+    }
+
+    .smallerer {
+        font-size: .9em;
+    }
+
+    h2.larger {
+        font-size: 2em;
+    }
+    .larger {
+        1.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+
+    .tight-lines {
+        line-height: 1.2em;
+    }
+    .med-lines {
+        line-height: 1.5em;
+    }
+
+    .left-3rd {
+        width: 31%;
+        margin: 1%;
+        float: left;
+        padding-top: 28px;
+    }
+    .right-3rd {
+        width: 65%;
+        margin: 1%;
+        float: right;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
