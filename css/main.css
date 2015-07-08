@@ -117,6 +117,7 @@ nav li {
     color: black;
 }
 
+nav a,
 nav a:hover,
 nav a:visited {
     color: black;
@@ -124,6 +125,13 @@ nav a:visited {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+#logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
 }
 
 /* ==============
@@ -380,6 +388,10 @@ nav a:hover {
 
     html {
         background-color: transparent;
+    }
+
+    #logo {
+        display: inline;
     }
 
     .wrapper {

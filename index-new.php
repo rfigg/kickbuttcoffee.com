@@ -21,7 +21,7 @@
             #mobile-header {
                 display: block;
             }
-            #navigation {
+            #navigation, #sidr {
                 display: none;
             }    	
             @media only screen and (min-width: 40em) {
@@ -97,7 +97,7 @@
                 
                 <p class="smallerer">Cafe by Day... Full Liquor Bar with Live Events at Night</p>
                 <em><strong><p>
-                    FULL MENU: <a href="menu.htm">Click Here</a> or as <a href="2012/jan_21_2012_menu_as_pdf_11_by_17_inches.pdf" target="_blank">PDF</a>
+                    FULL MENU: <a href="menu.htm" target="_blank">Click Here</a> or as <a href="2012/jan_21_2012_menu_as_pdf_11_by_17_inches.pdf" target="_blank">PDF</a>
                 </p>
                 <p>
                     <a href="https://maps.google.com/maps?ie=UTF8&cid=11079980876530906950&q=Kick+Butt+Coffee+Music+%26+Booze&iwloc=A&gl=US&hl=en-US" target="_blank">5775 Airport Blvd.</a> Austin, Texas USA<br />
@@ -113,14 +113,6 @@
                 <p class="smallerer">
                     For booking, please email: <a href="mailto:booking@kickbuttcoffee.com">Booking@kickbuttcoffee.com</a><br />
                 </p>
-                </div>
-                <hr />
-
-                <h2 class="centered red larger"><em>What's up this week at Kick Butt?</em></h2>
-                <p class="smallerer centered">5775 Airport Blvd (<a href="http://maps.google.com/maps?q=5775+airport+blvd&um=1&ie=UTF-8&hq=&hnear=0x8644ca1615b0a09d:0x7aef8e9564e4a413,5775+Airport+Blvd,+Austin,+TX+78752&gl=us&ei=11dmToXRGuqisQKlq5CnCg&sa=X&oi=geocode_result&ct=image&resnum=1&ved=0CBcQ8gEwAA">Google Map</a>)</p>
-                <p class="smallerer centered tight-lines">For booking email:<br /><a href="mailto:booking@kickbuttcoffee.com">Booking@kickbuttcoffee.com</a></p>
-                <div class="cal-embed-container">
-                <iframe src="http://www.google.com/calendar/hosted/mastergohring.com/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mastergohring.com_uihnkkllh9o5en9mkbis6hpao0%40group.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FChicago" style="border-width:0;" frameborder="0" scrolling="no"></iframe>
                 </div>
                 <hr />
 
@@ -165,6 +157,13 @@ the Bruce Lee Nunchucku wielding Barista - 30sec</p>
 <br />Join us the Last Saturday Night Every Month 8pm-10pm</p>
                 <hr />
 
+        <h2 class="centered red larger"><em>What's up this week at Kick Butt?</em></h2>
+        <p class="smallerer centered">5775 Airport Blvd (<a href="http://maps.google.com/maps?q=5775+airport+blvd&um=1&ie=UTF-8&hq=&hnear=0x8644ca1615b0a09d:0x7aef8e9564e4a413,5775+Airport+Blvd,+Austin,+TX+78752&gl=us&ei=11dmToXRGuqisQKlq5CnCg&sa=X&oi=geocode_result&ct=image&resnum=1&ved=0CBcQ8gEwAA">Google Map</a>)</p>
+        <p class="smallerer centered tight-lines">For booking email:<br /><a href="mailto:booking@kickbuttcoffee.com">Booking@kickbuttcoffee.com</a></p>
+        <div class="cal-embed-container">
+        <iframe src="http://www.google.com/calendar/hosted/mastergohring.com/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mastergohring.com_uihnkkllh9o5en9mkbis6hpao0%40group.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FChicago" style="border-width:0;" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <hr />
 
         <h2 class="centered"><strong><em>Register to Win $250.00</em></strong></h2>
         <p class="fluid max-650"><img class="fluid" src="winners/april_2012_opt.jpg" style="border: 1px solid black"></p>
@@ -230,15 +229,16 @@ the Bruce Lee Nunchucku wielding Barista - 30sec</p>
         </div> <!-- overall -->
 
         <div class="footer-container">
-            <footer>
+            <footer class="wrapper">
                 <span class="centered georgia" style="display: block">Designed By Master Gohring &copy; 2007-2015</span>
             </footer>
         </div>
 
-        <div id="logo"><img src="images/kickbuttcoffeelogo.gif" width="175" height="175" border="0" ></div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
 
         <script src="js/vendor/jquery.sidr.min.js"></script>
 
@@ -248,6 +248,14 @@ the Bruce Lee Nunchucku wielding Barista - 30sec</p>
         });
         </script>
 
-        <!-- (removed) Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
     </body>
 </html>
