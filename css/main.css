@@ -1,5 +1,11 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html {
     color: #222;
     font-size: 1em;
@@ -388,6 +394,63 @@ nav a:hover {
 
     html {
         background-color: transparent;
+        padding-top: 45px;
+    }
+
+    body {
+        background: black;
+        background-attachment: fixed;
+        background-image: url(http://kickbuttcoffee.com/2013/kick_butt_coffee_austin_texas_yes.jpg);
+    }
+
+    .grid::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    [class*='col-'] {
+        float: left;
+    }
+
+    .col-l-top {
+        width: 50%;
+        padding-top: 80px;
+    }
+
+    .col-r-top {
+        width: 50%;
+        padding-left: 10px;
+    }
+
+    .col-l {
+        width: 50%;
+        padding-right: 10px;
+    }
+
+    .col-r {
+        width: 50%;
+        padding-left: 10px;
+    }
+
+    .lg-flt-lft {
+        float: left;
+    }
+    .lg-half-width {
+        width: 50%;
+    }
+    .lg-mrgn-rt-20 {
+        margin-right: 20px;
+    }
+
+    .pad-top-100 {
+        padding-top: 100px;
+    }
+    .pad-top-75 {
+        padding-top: 75px;
+    }
+    .pad-top-50 {
+        padding-top: 50px;
     }
 
     #logo {
@@ -423,15 +486,6 @@ nav a:hover {
         background: inherit;
     }
 
-    body {
-        background: black;
-        background-attachment: fixed;
-        background-image: url(http://kickbuttcoffee.com/2013/kick_butt_coffee_austin_texas_yes.jpg);
-    }
-
-    html {
-        padding-top: 45px;
-    }
 
     .title {
         margin-top: 1em;
@@ -466,7 +520,7 @@ nav a:hover {
         line-height: 1.5em;
     }
 
-    .left-3rd {
+/*    .left-3rd {
         width: 31%;
         margin: 1%;
         float: left;
@@ -476,7 +530,7 @@ nav a:hover {
         width: 65%;
         margin: 1%;
         float: right;
-    }
+    }*/
 }
 
 /* ==========================================================================
