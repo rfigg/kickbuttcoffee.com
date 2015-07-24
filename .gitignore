@@ -44,3 +44,6 @@ Thumbs.db
 *.gif
 *.ico
 sidr-package-1.2.1/
+node_modules/
+index.html
+dist/
