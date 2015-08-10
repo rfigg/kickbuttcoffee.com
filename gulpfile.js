@@ -23,8 +23,8 @@ gulp.task('css', function() {
 	return gulp.src(["./css/normalize.min.css","./css/main.css","./css/jquery.sidr.dark.dev.css"])
 		.pipe(concat("all.css"))
 		// .pipe(minify)
-		.pipe(gulp.dest("./css/"));
-		// .pipe(browserSync.stream());
+		.pipe(gulp.dest("./css/"))
+		.pipe(browserSync.stream());
 });
 
 gulp.task('js', function() {

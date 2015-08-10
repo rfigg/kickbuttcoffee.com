@@ -9,7 +9,11 @@
         <title>Kick Butt Coffee Music &amp; Booze</title>
         <meta name="description" content="Austin's Premiere Homebrewed Coffee House and Venue, with a full liquor bar and nightly events">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <meta name="geo.region" content="US-TX" />
+        <meta name="geo.placename" content="Austin" />
+        <meta name="geo.position" content="30.322415;-97.713920" />
+        <meta name="ICBM" content="30.322415, -97.713920" />
+        <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
 
 <!--         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -34,7 +38,18 @@
             "telephone": "512-454-5425",
             "logo": "http://kickbuttcoffee.com/2013/Logos/kick_butt_coffee_music_and_booze_opt.jpg",
             "url": "http://www.kickbuttcoffee.com",
-            "email": "thecoffeeguy@kickbuttcoffee.com"
+            "email": "thecoffeeguy@kickbuttcoffee.com",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "30.322415",
+              "longitude": "-97.713920"
+            },
+            "sameAs": [
+                "http://youtube.com/kickbuttcoffee",
+                "https://plus.google.com/108741565480066652893/posts",
+                "http://twitter.com/kickbuttcoffee",
+                "http://facebook.com/kickbuttcoffee1"
+            ]
         }
         </script>
 
