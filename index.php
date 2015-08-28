@@ -90,14 +90,13 @@
             <div id="menu-container">
                 <nav>
                 <ul>    
-                    <li><a href="ourcoffees.htm">our coffees</a></li>
-                    <li><a href="ourstore.htm">our venue</a></li>
+                    <li><a href="http://kickbuttcoffee.com/2014/Menu_June_23_2014.pdf">menu</a></li>
+                    <li><a href="http://kickbuttcoffee.com/2014/Bar_Menu_6_pages_06_16_2014.pdf">booze</a></li>
+                    <li><a href="http://kickbuttcoffee.com/2015/breakfast_catering_11_18_2014.pdf">catering</a></li>
+                    <li><a href="events.htm">calendar</a></li>
                     <li><a href="online_store.htm">online store</a></li>
-                    <li><a href="menu.htm">menus</a></li>
                     <li><a href="donation.htm">donation request</a></li>
-                    <li><a href="feedme.htm">catering</a></li>
                     <li><a href="barista_for_a_day.htm">classes</a></li>
-                    <li><a href="events.htm">events</a></li>
                     <li><a href="aboutus.htm">about us</a></li>
                     <li><a href="winners.htm">winners</a></li>
                     <li><a href="https://maps.google.com/maps?ie=UTF-8&amp;q=Kick+Butt+Coffee+Music+%26+Booze&amp;fb=1&amp;gl=us&amp;hq=kick+butt+coffee+music+%26+booze&amp;hnear=0x8644b599a0cc032f:0x5d9b464bd469d57a,Austin,+TX&amp;cid=0,0,11079980876530906950&amp;ei=FViFUoW_HomW2QXki4HwCw&amp;ved=0CJkBEPwSMAs">map</a></li>
@@ -125,12 +124,12 @@
 
         <div id="events-container">
             <div id="events-inner">
-                <div><img src="img/events/comn_opt.jpg" alt="Comedy Open Mic Night Every Wednesday" /></div>
                 <div><img src="img/events/momn_opt.jpg" alt="Music Open Mic Night Every Thursday" /></div>
                 <div><img src="img/events/bdld_opt.jpg" alt="Belly Dancing Live Drumming Last Saturday of the Month" /></div>
                 <div><img src="img/events/sah_opt.jpg" alt="Spoken and Heard Open Mic Every Sunday" /></div>
                 <div><img src="img/events/gwd_opt.jpg" alt="Geeks Who Drink Trivia Every Monday" /></div>
                 <div><img src="img/events/jj_opt.jpg" alt="Jazz Jam First Tuesday of the Month" /></div>
+                <div><img src="img/events/comn_opt.jpg" alt="Comedy Open Mic Night Every Wednesday" /></div>
                 <div><img src="img/events/event2_opt.jpg" alt="Comedian Authority Rap Battle" /></div>
                 <div><img src="img/events/fdn_opt.jpg" alt="Fusion Dance Night First Saturday of the Month" /></div>
                 <div><img src="img/events/rrd_opt.jpg" alt="Now Serving Round Rock Donuts Fresh Daily until we sell out" /></div>
@@ -174,14 +173,16 @@
                            {
                                 breakpoint: 726,
                                 settings: {
-                                    slidesToShow: 3                                }
+                                    slidesToShow: 3                                
+                                }
                             },
                             {
                                 breakpoint: 1072,
                                 settings: {
                                     slidesToShow: 4
                                 }
-                            },{
+                            },
+                            {
                                 breakpoint: 1675,
                                 settings: {
                                     slidesToShow: 5
