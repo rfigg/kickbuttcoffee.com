@@ -19,7 +19,7 @@
 <!--         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css"> -->
         <!-- <link rel="stylesheet" href="css/meanmenu.css" /> -->
-        <link rel="stylesheet" href="css/all.css" />
+        <link rel="stylesheet" type="text/css" href="css/all.css" />
 
 <!--         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css"/>
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/> -->
@@ -93,7 +93,7 @@
                     <li><a href="http://kickbuttcoffee.com/2014/Menu_June_23_2014.pdf">menu</a></li>
                     <li><a href="http://kickbuttcoffee.com/2014/Bar_Menu_6_pages_06_16_2014.pdf">booze</a></li>
                     <li><a href="http://kickbuttcoffee.com/2015/breakfast_catering_11_18_2014.pdf">catering</a></li>
-                    <li><a href="events.htm">calendar</a></li>
+                    <li><a href="calendar.html">calendar</a></li>
                     <li><a href="online_store.htm">online store</a></li>
                     <li><a href="donation.htm">donation request</a></li>
                     <li><a href="barista_for_a_day.htm">classes</a></li>
@@ -124,12 +124,12 @@
 
         <div id="events-container">
             <div id="events-inner">
-                <div><img src="img/events/momn_opt.jpg" alt="Music Open Mic Night Every Thursday" /></div>
                 <div><img src="img/events/bdld_opt.jpg" alt="Belly Dancing Live Drumming Last Saturday of the Month" /></div>
                 <div><img src="img/events/sah_opt.jpg" alt="Spoken and Heard Open Mic Every Sunday" /></div>
                 <div><img src="img/events/gwd_opt.jpg" alt="Geeks Who Drink Trivia Every Monday" /></div>
                 <div><img src="img/events/jj_opt.jpg" alt="Jazz Jam First Tuesday of the Month" /></div>
                 <div><img src="img/events/comn_opt.jpg" alt="Comedy Open Mic Night Every Wednesday" /></div>
+                <div><img src="img/events/momn_opt.jpg" alt="Music Open Mic Night Every Thursday" /></div>
                 <div><img src="img/events/event2_opt.jpg" alt="Comedian Authority Rap Battle" /></div>
                 <div><img src="img/events/fdn_opt.jpg" alt="Fusion Dance Night First Saturday of the Month" /></div>
                 <div><img src="img/events/rrd_opt.jpg" alt="Now Serving Round Rock Donuts Fresh Daily until we sell out" /></div>
