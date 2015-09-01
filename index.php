@@ -90,9 +90,10 @@
             <div id="menu-container">
                 <nav>
                 <ul>    
-                    <li><a href="http://kickbuttcoffee.com/2014/Menu_June_23_2014.pdf">menu</a></li>
-                    <li><a href="http://kickbuttcoffee.com/2014/Bar_Menu_6_pages_06_16_2014.pdf">booze</a></li>
-                    <li><a href="http://kickbuttcoffee.com/2015/breakfast_catering_11_18_2014.pdf">catering</a></li>
+                    <li><a href="http://kickbuttcoffee.com/img/Menu_June_23_2014_1.compressed.pdf" target="_blank">menu</a></li>
+                    <li><a href="http://kickbuttcoffee.com/img/Menu_June_23_2014_2.compressed.pdf" target="_blank">lunch</a></li>
+                    <li><a href="http://kickbuttcoffee.com/img/Bar_Menu_6_pages_06_16_2014.compressed.pdf" target="_blank">booze</a></li>
+                    <li><a href="http://kickbuttcoffee.com/img/breakfast_catering_11_18_2014.compressed.pdf" target="_blank">catering</a></li>
                     <li><a href="calendar.html">calendar</a></li>
                     <li><a href="online_store.htm">online store</a></li>
                     <li><a href="donation.htm">donation request</a></li>
@@ -124,18 +125,20 @@
 
         <div id="events-container">
             <div id="events-inner">
-                <div><img src="img/events/bdld_opt.jpg" alt="Belly Dancing Live Drumming Last Saturday of the Month" /></div>
-                <div><img src="img/events/sah_opt.jpg" alt="Spoken and Heard Open Mic Every Sunday" /></div>
-                <div><img src="img/events/gwd_opt.jpg" alt="Geeks Who Drink Trivia Every Monday" /></div>
                 <div><img src="img/events/jj_opt.jpg" alt="Jazz Jam First Tuesday of the Month" /></div>
                 <div><img src="img/events/comn_opt.jpg" alt="Comedy Open Mic Night Every Wednesday" /></div>
                 <div><img src="img/events/momn_opt.jpg" alt="Music Open Mic Night Every Thursday" /></div>
                 <div><img src="img/events/event2_opt.jpg" alt="Comedian Authority Rap Battle" /></div>
                 <div><img src="img/events/fdn_opt.jpg" alt="Fusion Dance Night First Saturday of the Month" /></div>
+                <div><img src="img/events/sah_opt.jpg" alt="Spoken and Heard Open Mic Every Sunday" /></div>
+                <div><img src="img/events/gwd_opt.jpg" alt="Geeks Who Drink Trivia Every Monday" /></div>
                 <div><img src="img/events/rrd_opt.jpg" alt="Now Serving Round Rock Donuts Fresh Daily until we sell out" /></div>
                 <div><img src="img/events/rfr_opt.jpg" alt="Rigby Family Residency Third Tuesday of the Month" /></div>
+                <div><img src="img/events/beech_facebook_opt.jpg" alt="Beech 9-22-15" /></div>
                 <div><img src="img/events/kbsu_opt.jpg" alt="Kick Butt Stand Up Third Friday of the Month" /></div>
                 <div><img src="img/events/event3_opt.jpg" alt="Straight Outta Austin Ray Prim Drew Davis" /></div>
+                <div><img src="img/events/bdld_opt.jpg" alt="Belly Dancing Live Drumming Last Saturday of the Month" /></div>
+                <div><img src="img/events/jardin_telling_facebook_opt.jpg" alt="Jardin Telling Tues Sept 29th" /></div>
                 <div><img src="img/events/event4_opt.jpg" alt="The Love Affair A Valentines Experience" /></div>
             </div>
         </div>
@@ -205,6 +208,13 @@
                    showSliderScreen(widthScreen);
                }
            );
+
+            //my code to display posters only after slick slider has initialized, to avoid FOUC
+            var noFOUC = document.querySelectorAll("#events-inner img");
+            for (var i = 0; i < noFOUC.length; i++) {
+                noFOUC[i].style.display = "block";
+            }
+
         </script>
 
         <!-- (removed) Google Analytics: change UA-XXXXX-X to be your site's ID. -->
