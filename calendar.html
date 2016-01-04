@@ -1,0 +1,109 @@
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.4.0/fullcalendar.min.css' /> -->
+	<link rel='stylesheet' href='css/fullcalendar.css' />
+	<script src='//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+	<script src='//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js'></script>
+	<script src='//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.4.0/fullcalendar.min.js'></script>
+	<script src='//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.4.0/gcal.js'></script>
+	<!--<script src='js/vendor/myListview.js'></script>-->
+
+	<!--<style type="text/css">
+		ul.fc-agendaList {
+			list-style-type: none;
+			padding-left: ;
+		}
+	</style>-->
+
+	<style type="text/css">
+		body {
+			background-color: black;
+			color: white;
+			font-family: sans-serif;
+		}
+
+		h1 a, h1 a:visited {
+			color: red;
+		}
+
+		h1 a:active, h1 a:hover {
+			color: black;
+			background: red;
+		}
+
+		.iphone {
+			display: block;
+			width: 320px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.hidden-mobile {
+			display: none;
+		}
+		.hidden-desktop {
+			display: none;
+		}
+
+		@media only screen and (min-width: 600px) {
+
+			.iphone {
+				display: none;
+			}
+
+			.hidden-desktop {
+				display: block;
+				width: 600px;
+				margin-right: auto;
+				margin-left: auto;
+			}
+		}
+
+		@media only screen and (min-width: 975px) {
+			.hidden-mobile {
+				display: block;
+			}
+			.hidden-desktop {
+				display: none;
+			}
+		}
+	</style>
+
+	<script>
+		$(document).ready(function() {
+		    $('#calendar').fullCalendar({
+		        googleCalendarApiKey: 'AIzaSyCYWWgpsVrpZ_s_AxvnjJcUc9ApGoJUTFo',
+	    		events: {
+                    googleCalendarId: 'mastergohring.com_uihnkkllh9o5en9mkbis6hpao0@group.calendar.google.com'
+                },
+                header: {
+                	left:   'title',
+            	    // center: 'month',
+            	    right:  'today prev,next'
+                }
+		    });
+		});
+	</script>
+</head>
+<body>
+	<h1 align="center"><a href="index.php">Kick Butt Coffee</a> Event Calendar</h1>
+	<div class="iphone">
+		<iframe src="https://www.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=480&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mastergohring.com_uihnkkllh9o5en9mkbis6hpao0%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FChicago" style=" border-width:0 " width="320" height="480" frameborder="0" scrolling="no"></iframe>
+	</div>
+	<div class='hidden-desktop'>
+		<iframe src="https://www.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=800&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mastergohring.com_uihnkkllh9o5en9mkbis6hpao0%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FChicago" style=" border-width:0 " width="600" height="800" frameborder="0" scrolling="no"></iframe>
+	</div>
+	<div id='calendar' class='hidden-mobile' style='width: 90%; margin-right: auto; margin-left: auto'></div>
+
+	<script>
+	    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+	    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+	    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+	    e.src='//www.google-analytics.com/analytics.js';
+	    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+	    ga('create','UA-1515103-2','auto');ga('send','pageview');
+	</script>
+</body>
+</html>
