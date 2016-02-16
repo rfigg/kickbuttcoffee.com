@@ -1,0 +1,505 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+   /* ==============
+       MOBILE: Menu
+      ============== */
+
+/*div {
+    outline: 1px solid red;
+}*/
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    background: black;
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+    font-weight: lighter;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.mobile-hidden {
+    display: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: none;
+}
+
+nav li {
+    display: block;
+    margin-bottom: 5px;
+    padding: 6px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: .9em;
+
+    background: white;
+    color: black;
+}
+
+nav ul li.pink {
+    background-color: LightPink;
+}
+nav ul li.grey {
+    background-color: LightGrey;
+}
+nav ul li.green {
+    background-color: LightGreen;
+}
+nav ul li.purple {
+    background-color: #ffccff;
+}
+
+nav a,
+nav a:hover,
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#logo {
+    width: 44%;
+    float: left;
+    position: relative;
+    top: -30px;
+    z-index: 1000000;
+    max-width: 250px;
+}
+
+#logo img {
+    width: 100%;
+    padding: 7px;
+}
+
+#signup {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+    clear: right;
+}
+
+#social-container {
+    float: right;
+    clear: right;
+}
+
+#social-container ul {
+    list-style-type: none;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 0;
+}
+
+#social-container li {
+    display: inline;
+    padding: 1px;
+}
+    
+
+#mobile-phone {
+    float: right;
+    margin-right: 10px;
+    font-size: 1.2em;
+    padding-top: 15px;
+    clear: right;
+}
+
+#message {
+    clear: both;
+    padding: 10px;
+}
+
+#message p {
+    text-align: center;
+    margin-top: 0;
+}
+
+#message h1 {
+    font-size: 1.2em;
+}
+
+#message a, #message a:visited {
+    padding: 3px;
+    color: white;
+    background-color: black;
+    text-decoration: underline;
+}
+
+#message a:hover, #message a:active {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 6px; 
+    padding: 3px;
+}
+
+#form-container {
+    clear: both;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;   
+}
+
+#events-container {
+    width: 100%;
+}
+
+#events-inner div.poster {
+    display: inline-block;
+    width: 100%;
+    padding: 0 10px 10px 10px;
+    text-align: center;
+}
+
+#events-inner div.date {
+    font-size: .8em;
+}
+
+#events-container img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-container {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#contact-container ul {
+    padding-left: 0;
+} 
+
+#contact-container li {
+    text-align: center;
+    display: block;
+}
+
+#contact-container a,
+#contact-container a:hover,
+#contact-container a:visited,
+#contact-container a:active
+{
+    color: white;
+}
+
+#menu-label {
+    position: absolute;
+    z-index: 1000000;
+    right: 50px;
+    top: 12px;
+
+}
+
+.iframe-container {
+    position: relative;
+   padding-bottom: 56.25%;
+   padding-top: 30px;
+   height: 0;
+   overflow: hidden;
+}
+
+.iframe-container iframe,   
+.iframe-container object,  
+.iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#vip #message img, #godfather #message img {
+    width: 100%;
+    max-width: 800px;
+}
+
+.footer {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #AAAAAA;
+    margin-top: 10px;
+}
+
+#embed-outer {
+    text-align: center;
+    margin: 15px 10px;
+}
+.embed-container { 
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   **************************************************************************
+   Media Queries
+   **************************************************************************
+   ========================================================================== */
+
+@media only screen and (min-width: 420px) {
+    .home #events-inner div.poster {
+        width: 49.5%;
+    }
+}
+
+@media only screen and (min-width: 491px) {
+    #social-container ul {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 727px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    div {
+        /*border: 1px solid red;*/
+    }
+
+    .mobile-hidden {
+        display: inherit;
+    }
+
+    .desktop-hidden {
+        display: none;
+    }
+
+
+    #events-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #events-inner div.poster {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    #events-inner img {
+        width: 90%;
+        display: none;
+    }
+
+    #events-inner .date {
+        display: none;
+    }
+
+    .footer {
+        font-size: 12px;
+        margin-top: 25px;
+    }
+
+    #logos .footer,
+    .cookies .footer {
+        position: fixed;
+    }
+
+    #snob .footer {
+        position: static;
+    }
+
+    #embed-outer {
+        width: 98%;
+        max-width: 980px;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+    .live #embed-outer {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .form-container {
+        position: absolute;
+        top: 275px;
+        left: 60px;
+        right: 60px;   
+    }
+}
+
+@media only screen and (min-width: 850px) {
+
+    #message {
+        display: inline-block;
+        width: 350px;
+        margin: 0 auto;
+        padding-top: 20px;
+        clear: both;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #message h1 {
+        font-size: 2em;
+    }
+
+    #message h5 {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width: 880px) {
+
+    #events-inner div.date {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 971px) {
+
+    #embed-outer {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}

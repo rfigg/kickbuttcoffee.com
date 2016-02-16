@@ -16,12 +16,16 @@
         <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
 
         <!-- Commented-out stylesheets should be included in all.css -->
-<!--         <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css"> -->
-        <!-- <link rel="stylesheet" href="css/meanmenu.css" /> -->
-        <link rel="stylesheet" type="text/css" href="css/all.css" />
+        <!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
+        <!-- <link rel="stylesheet" href="css/main.css"> PUT THIS BACK IN FOR test.css!! -->
+        <!--  <link rel="stylesheet" href="css/test.css">        
+        <link rel="stylesheet" href="css/meanmenu.css" />
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css"> -->
+        
+        <link rel="stylesheet" type="text/css" href="css/all-new.css" />
 
-<!--         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css"/>
+        <!--         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css"/>
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/> -->
         
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -65,11 +69,11 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <header class="clearfix">
+        <header>
 
-            <div id="logo"><img src="images/kickbuttcoffeelogo.gif" alt="Logo for Kick Butt Coffee Music &amp; Booze" /></div>
+            <div id="logo"><a href="/"><img src="images/kickbuttcoffeelogo.gif" alt="Logo for Kick Butt Coffee Music &amp; Booze" /></a></div>
 
-            <div id="menu-label" class="desktop-hidden">NAVIGATION</div>
+            <div id="menu-label">NAVIGATION</div>
 
             <div id="signup">
                 <div class="createsend-button" style="height:22px;display:inline-block;" data-listid="i/C3/D1B/15A/7BF3553D2055320F">
@@ -77,7 +81,7 @@
                 <script type="text/javascript">(function () { var e = document.createElement('script'); e.type = 'text/javascript'; e.async = true; e.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://btn.createsend1.com/js/sb.min.js?v=3'; e.className = 'createsend-script'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s); })();</script>
             </div>
 
-            <div id="mobile-phone" class="desktop-hidden">512-454-5425
+            <div id="mobile-phone">512-454-5425
             </div>       
 
             <div id="social-container">
@@ -95,16 +99,15 @@
             <div id="menu-container">
                 <nav>
                 <ul>    
-                    <li><a href="aboutus.htm">about us</a></li>
                     <li><a href="audio_tutorial.html">audio tutorial</a></li>
-                    <li><a href="booking.html">booking</a></li>
+                    <li><a href="booking.html" target="_blank">booking</a></li>
                     <li><a href="http://kickbuttcoffee.com/img/Bar_Menu_6_pages_06_16_2014.compressed.pdf" target="_blank">booze</a></li>
-                    <li><a href="calendar.html">calendar</a></li>
+                    <li><a href="calendar.htm">calendar</a></li>
                     <li><a href="http://kickbuttcoffee.com/img/breakfast_catering_11_18_2014.compressed.pdf" target="_blank">catering</a></li>
                     <li><a href="barista_for_a_day.htm">classes</a></li>
                     <li><a href="coffee_snob.htm">coffee snob?</a></li>
                     <li><a href="xxl_cookies.html">cookies!</a></li>
-                    <li><a href="donation.htm">donations</a></li>
+                    <li><a href="donation.htm" target="_blank">donations</a></li>
                     <li><a href="godfather_booth.html">godfather booth</a></li>
                     <li><a href="http://mastergohring.com" target="_blank">kung fu school</a></li>
                     <li><a href="live_feed.html">live feed</a></li>
@@ -116,60 +119,192 @@
                     <li><a href="taco_cam.html">taco cam</a></li>
                     <li><a href="vip_room.html">vip room</a></li>
                     <li><a href="watah.html">wah-tah!</a></li>
-                    <li><a href="http://kickbuttcoffee.com/win">win $250</a></li>
+                    <li><a href="http://kickbuttcoffee.com/win" target="_blank">win $250</a></li>
                     <li><a href="winners.htm">winners</a></li>
                 </ul>
                 </nav> 
-            </div>
+            </div>        
 
         </header>
 
         <div id="message">
             <p>Open M-F 6:06am-10pm or Later<br />
             Sat/Sun 8:08am-10pm or Later</p>
-        </div>
-        
-
-        <div id="contact-container">
-            <ul>
-                <li>5775 Airport Blvd. Austin, TX</li>
-                <li class="mobile-hidden">512-454-5425</li>
-                <li><a href="mailto:thecoffeeguy@kickbuttcoffee.com">thecoffeeguy@kickbuttcoffee.com</a></li>
-                <li><a href="mailto:booking@kickbuttcoffee.com">booking@kickbuttcoffee.com</a></li>
-            </ul>
+            <p>5775 Airport Blvd. Austin, TX<br>
+            <a href="email_us.html" target="_blank">Email Us</a>&nbsp;
+            <a href="booking.html" target="_blank">Email Booking</a></p>
         </div>
 
         <div id="events-container">
             <div id="events-inner">
-                <div class="poster"><a href="img/events/Andrew_Mahan.pdf" target="_blank"><img src="img/events/Andrew_Mahan_opt.jpg" alt="Afton presents Andrew Mahan" /></a><div class="date">Sat Jan 9 2016</div></div>
-                <div class="poster"><a href="img/events/veetee.pdf" target="_blank"><img src="img/events/veetee_opt.jpg" alt="Veetee presented by Afton" /></a><div class="date">Sat Jan 9 2016</div></div>
-                <div class="poster"><a href="img/events/jessiejamez.JPG" target="_blank"><img src="img/events/jessiejamez_opt.jpg" alt="Afton presents Jessie Jamez" /></a><div class="date">Sat Jan 9 2016</div></div>
-                <div class="poster"><a href="img/events/lil_chris.PNG" target="_blank"><img src="img/events/lil_chris_opt.jpg" alt="#2stoned presents #austinsbestdamnparty Lil Chris 22nd B-Day Bash Capricorn &amp; Aquarius Bash" /></a><div class="date">Sat Jan 16 2016</div></div>
-                <div class="poster"><a href="img/events/event4.jpg" target="_blank"><img src="img/events/event4_opt.jpg" alt="The Love Affair A Valentines Experience" /></a><div class="date">Sat Feb 13 2016</div></div>
-                <div class="poster"><a href="img/events/Alex-Grenier-Trio.jpg" target="_blank"><img src="img/events/Alex-Grenier-Trio-opt.jpg" alt="Alex Grenier Trio Jazz Guitar with Frank Durand &amp; Herve Moquet" /></a><div class="date">Fri Feb 19 2016</div></div>
-                <div class="poster"><a href="img/events/WesWalker.jpg" target="_blank"><img src="img/events/WesWalker_opt.jpg" alt="Wes Walker &amp; Wiggz plus many more artists" /></a><div class="date">Mar 15 2016</div></div>
-                <div class="poster"><a href="img/events/gwd.jpg" target="_blank"><img src="img/events/gwd_opt.jpg" alt="Geeks Who Drink Trivia Every Monday" /></a><div class="date">Monday Nights</div></div>
-                <div class="poster"><a href="img/events/comn.jpg" target="_blank"><img src="img/events/comn_opt.jpg" alt="Comedy Open Mic Night Every Wednesday" /></a><div class="date">Wednesday Nights</div></div>
-                <div class="poster"><a href="img/events/momn.jpg" target="_blank"><img src="img/events/momn_opt.jpg" alt="Music Open Mic Night Every Thursday" /></a><div class="date">Thursday Nights</div></div>
-                <div class="poster"><a href="img/events/sah.jpg" target="_blank"><img src="img/events/sah2.jpg" alt="Spoken and Heard Open Mic Every Sunday" style="border: 1px solid lightgrey" /></a><div class="date">Sunday Nights</div></div>
-                <div class="poster"><a href="img/events/rrd.jpg" target="_blank"><img src="img/events/rrd_opt.jpg" alt="Now Serving Round Rock Donuts Fresh Daily until we sell out" /></a><div class="date">Every Day!</div></div>
-                <div class="poster"><a href="img/events/event5.jpg" target="_blank"><img src="img/events/event5_opt.jpg" alt="World Gone Mad Rock and Roll Drum &amp; Bugle Corps Every First and Third Sunday 3pm No Cover" /></a><div class="date">Every 1st and 3rd Sunday Early</div></div>
-                <div class="poster"><a href="img/events/kbsu.png" target="_blank"><img src="img/events/kbsu_opt.jpg" alt="Kick Butt Stand Up Third Friday of the Month" /></a><div class="date">Every 3rd Friday</div></div>
-                <div class="poster"><a href="img/events/rfr.jpg" target="_blank"><img src="img/events/rfr_opt.jpg" alt="Rigby Family Residency Third Tuesday of the Month" /></a><div class="date">Every 3rd Tuesday</div></div>
-                <div class="poster"><a href="img/events/AndrewCorey.jpg" target="_blank"><img src="img/events/AndrewCorey_opt.jpg" alt="Andrew Corey Sept 28 and every 4th Monday of the month" /></a><div class="date">Every 4th Monday Early</div></div>
-                <div class="poster"><a href="img/events/bdld.jpg" target="_blank"><img src="img/events/bdld_opt.jpg" alt="Belly Dancing Live Drumming Last Saturday of the Month" /></a><div class="date">Every Last Saturday</div></div>
-                <div class="poster"><a href="img/events/js2s.jpg" target="_blank"><img src="img/events/js2s_opt.jpg" alt="Jan Seides 2nd Sunday Afternoon Songwriters" /></a><div class="date">Every 2nd Sunday afternoon</div></div>
-                <div class="poster"><a href="img/events/rjj.pdf" target="_blank"><img src="img/events/rjj_opt.jpg" alt="Roots Jazz Jam 2nd Tuesday Every Month" /></a><div class="date">Every 2nd Tuesday</div></div> <!-- Every 2nd Tuesday -->
-                <div class="poster"><a href="img/events/DFFKickButtFirstTues_Danny.jpg" target="_blank"><img src="img/events/DFFKickButtFirstTues_Danny_opt.jpg" alt="Danny Fast Fingers First Tuesday of the Month Happy Hour" /></a><div class="date">Every 1st Tuesday Early</div></div>
-                <div class="poster"><a href="img/events/jj.jpg" target="_blank"><img src="img/events/jj_opt.jpg" alt="Jazz Jam First Tuesday of the Month" /></a><div class="date">Every 1st Tuesday</div></div>
-                <div class="poster"><a href="img/events/Fusion Dance_A_FINAL.jpg" target="_blank"><img src="img/events/fdn_opt.jpg" alt="Fusion Dance Night First Saturday of the Month" /></a><div class="date">Every 1st Saturday</div></div><!--Every 1st Saturday-->
+                <div class="poster">
+                    <a href="img/events/Alex-Grenier-Trio.jpg" target="_blank">
+                        <img src="img/events/Alex-Grenier-Trio-opt.jpg" alt="Alex Grenier Trio Jazz Guitar with Frank Durand &amp; Herve Moquet" />
+                    </a>
+                    <div class="date">Alex Grenier Trio</div>
+                    <div class="date">10:30p Fri Feb 19</div>
+                </div>
+                <div class="poster">
+                    <a href="img/events/Pixels.pdf" target="_blank">
+                        <img src="img/events/Pixels-opt.gif" alt="Pixels Presents Hometown Throwdown Street Fighter V Edition" />
+                    </a>
+                    <div class="date">Pixels Hometown Throwdown</div>
+                    <div class="date">9p Sat Feb 20</div>
+                </div>
+                <div class="poster">
+                    <a href="img/events/jess_ross.jpg" target="_blank">
+                        <img src="img/events/jess_ross_opt.jpg" alt="Jess Ross featuring Mike Vansummern Happy Hour Residency" />
+                    </a>
+                    <div class="date">Jess Ross Happy Hour</div>
+                    <div class="date">5:30 2nd Fri of the Month</div>
+                </div> <!--5:30 2nd Fri of the Month-->
+                <div class="poster">
+                    <a href="img/events/bang_boogie.jpg" target="_blank">
+                        <img src="img/events/bang_boogie_opt.jpg" alt="Bang Boogie Hoodlumz Empire" />
+                    </a>
+                    <div class="date">Bang Boogie Hoodlumz Empire</div>
+                    <div class="date">7p Sat Feb 27</div>
+                </div>
+                <div class="poster">
+                    <a href="img/events/alex.jpg" target="_blank">
+                        <img src="img/events/alex_opt.jpg" alt="Alex. You know, Alex." />
+                    </a>
+                    <div class="date">Alex</div>
+                    <div class="date">7p Sat Feb 27</div>
+                </div>
+                <div class="poster">
+                    <a href="img/events/bobby_meyer.jpg" target="_blank">
+                        <img src="img/events/bobby_meyer_opt.jpg" alt="Bobby Meyer" />
+                    </a>
+                    <div class="date">Bobby Meyer</div>
+                    <div class="date">7p Sat Feb 27</div>
+                </div>
+                <div class="poster">
+                    <a href="img/events/fighting-for-futures.png" target="_blank">
+                        <img src="img/events/fighting-for-futures_opt.jpg" alt="Fighting for Futures month long residency featuring OTC3 and MC Harold Imrpov" />
+                    </a>
+                    <div class="date">OTC3</div>
+                    <div class="date">8:30p Each Friday in March</div>
+                </div>  
+                <div class="poster">
+                    <a href="img/events/WesWalker.jpg" target="_blank">
+                        <img src="img/events/WesWalker_opt.jpg" alt="Wes Walker &amp; Wiggz plus many more artists" />
+                    </a>
+                    <div class="date">Wes Walker</div>
+                    <div class="date">2p Tues Mar 15</div>
+                </div>
+                <div class="poster">
+                    <a href="img/events/comn.jpg" target="_blank">
+                        <img src="img/events/comn_opt.jpg" alt="Comedy Open Mic Night Every Wednesday" />
+                    </a>
+                    <div class="date">Comedy Open Mic Night</div>
+                    <div class="date">8p Wednesday Nights</div>
+                </div> <!-- Wednesday Nights -->
+                <div class="poster">
+                    <a href="img/events/momn.jpg" target="_blank">
+                        <img src="img/events/momn_opt.jpg" alt="Music Open Mic Night Every Thursday" />
+                    </a>
+                    <div class="date">Music Open Mic Night</div>
+                    <div class="date">6:30p Thursday Nights</div>
+                </div> <!-- Thursday Nights -->
+                <div class="poster">
+                    <a href="img/events/sah.jpg" target="_blank">
+                        <img src="img/events/sah2.jpg" alt="Spoken and Heard Open Mic Every Sunday" />
+                    </a>
+                    <div class="date">Spoken and Heard Open Mic</div>
+                    <div class="date">7p Sunday Nights</div>
+                </div> <!-- Sunday Nights -->
+                <div class="poster">
+                    <a href="img/events/rrd.jpg" target="_blank">
+                        <img src="img/events/rrd_opt.jpg" alt="Now Serving Round Rock Donuts Fresh Daily until we sell out" />
+                    </a>
+                    <div class="date">Round Rock Donuts</div>
+                    <div class="date">Every Day!</div>
+                </div>
+                <div class="poster">
+                    <a href="img/events/gwd.jpg" target="_blank">
+                        <img src="img/events/gwd_opt.jpg" alt="Geeks Who Drink Trivia Every Monday" />
+                    </a>
+                    <div class="date">Geeks Who Drink Trivia</div>
+                    <div class="date">8p Monday Nights</div>
+                </div> <!-- Monday Nights -->
+                <div class="poster">
+                    <a href="img/events/event5.jpg" target="_blank">
+                        <img src="img/events/event5_opt.jpg" alt="World Gone Mad Rock and Roll Drum &amp; Bugle Corps Every First and Third Sunday 3pm No Cover" />
+                    </a>
+                    <div class="date">World Gone Mad</div>
+                    <div class="date">Early 1st and 3rd Sun of the Month</div>
+                </div> <!-- Early 1st and 3rd Sun of the Month -->
+                <div class="poster">
+                    <a href="img/events/rfr.jpg" target="_blank">
+                        <img src="img/events/rfr_opt.jpg" alt="Rigby Family Residency Third Tuesday of the Month" />
+                    </a>
+                    <div class="date">Rigby Family Residency</div>
+                    <div class="date">3rd Tues of the Month</div>
+                </div> <!-- 3rd Tues of the Month -->
+                <div class="poster">
+                    <a href="img/events/AndrewCorey.jpg" target="_blank">
+                        <img src="img/events/AndrewCorey_opt.jpg" alt="Andrew Corey Every 4th Monday of the month" />
+                    </a>
+                    <div class="date">Andrew Corey</div>
+                    <div class="date">Early 4th Mon of the Month</div>
+                </div> <!-- Early 4th Mon of the Month -->
+                <div class="poster">
+                    <a href="img/events/bdld.jpg" target="_blank">
+                        <img src="img/events/bdld_opt.jpg" alt="Belly Dancing Live Drumming Last Saturday of the Month" />
+                    </a>
+                    <div class="date">Belly Dancing Live Drumming</div>
+                    <div class="date">Last Sat of the Month</div>
+                </div> <!-- Last Sat of the Month -->
+                <div class="poster">
+                    <a href="img/events/DFFKickButtFirstTues_Danny.jpg" target="_blank">
+                        <img src="img/events/DFFKickButtFirstTues_Danny_opt.jpg" alt="Danny Fast Fingers First Tuesday of the Month Happy Hour" />
+                    </a>
+                    <div class="date">Danny Fast Fingers</div>
+                    <div class="date">Early 1st Tues of the Month</div>
+                </div> <!-- Early 1st Tues of the Month -->
+                <div class="poster">
+                    <a href="img/events/jj.jpg" target="_blank">
+                        <img src="img/events/jj_opt.jpg" alt="Jazz Jam First Tuesday of the Month" />
+                    </a>
+                    <div class="date">Jazz Jam</div>
+                    <div class="date">1st Tues of the Month</div>
+                </div> <!-- 1st Tues of the Month -->
+                <div class="poster">
+                    <a href="img/events/js2s.jpg" target="_blank">
+                        <img src="img/events/js2s_opt.jpg" alt="Jan Seides 2nd Sunday Afternoon Songwriters" />
+                    </a>
+                    <div class="date">Jan Seides Songwriters</div>
+                    <div class="date">Early 2nd Sun of the Month</div>
+                </div> <!-- Early 2nd Sun of the Month -->
+                <div class="poster">
+                    <a href="img/events/rjj.pdf" target="_blank">
+                        <img src="img/events/rjj_opt.jpg" alt="Roots Jazz Jam 2nd Tuesday Every Month" />
+                    </a>
+                    <div class="date">Roots Jazz Jam</div>
+                    <div class="date">2nd Tues of the Month</div>
+                </div> <!-- 2nd Tues of the Month -->
+                <div class="poster">
+                    <a href="img/events/kbsu.png" target="_blank">
+                        <img src="img/events/kbsu_opt.jpg" alt="Kick Butt Stand Up Third Friday of the Month" />
+                    </a>
+                    <div class="date">Kick Butt Stand Up</div>
+                    <div class="date">3rd Fri of the Month</div>
+                </div> <!-- 3rd Fri of the Month -->
+                <div class="poster">
+                    <a href="img/events/Fusion Dance_A_FINAL.jpg" target="_blank">
+                        <img src="img/events/fdn_opt.jpg" alt="Fusion Dance Night First Saturday of the Month" />
+                    </a>
+                    <div class="date">Fusion Dance Night</div>
+                    <div class="date">9p 1st Sat of the Month</div>
+                </div> <!--9p 1st Sat of the Month-->
 
 
-            </div>
-        </div>
+            </div> <!-- events inner -->
+        </div> <!-- events container -->
 
         <div class="footer">
-            <span>Last updated on Jan 4, 2016<br />Copyright &copy; 2015 Kick Butt Coffee</span>
+            <span>Last updated on Feb 16, 2016<br />Copyright &copy; 2016 Kick Butt Coffee</span>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -182,7 +317,7 @@
         <script>
             jQuery(document).ready(function () {
                 jQuery('header nav').meanmenu({
-                    meanScreenWidth: "726"
+                    meanScreenWidth: "10000"
                 });
             });
         </script>
@@ -245,8 +380,10 @@
             var noFOUC = document.querySelectorAll("#events-inner img");
             var noFOUC2 = document.querySelectorAll("#events-inner .date");
             for (var i = 0; i < noFOUC.length; i++) {
-                noFOUC[i].style.display = "block";
-                noFOUC2[i].style.display = "block";
+              noFOUC[i].style.display = "block";
+            }
+            for (var i = 0; i < noFOUC2.length; i++) {
+              noFOUC2[i].style.display = "block";
             }
 
         </script>
