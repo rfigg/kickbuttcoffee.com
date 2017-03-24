@@ -7,6 +7,7 @@ var	browserSync = require('browser-sync').create();
 
 var paths = {
 	stylesheets: ["./css/normalize.min.css","./css/main.css","./css/meanmenu.css","./css/slick.css","./css/slick-theme.css"],
+	stylesheets_new: ["./css/normalize.min.css","./css/test.css","./css/meanmenu.css","./css/slick.css","./css/slick-theme.css"],
 	scripts: ["./js/vendor/slick.min.js","./js/vendor/jquery.meanmenu.js"]
 }
 
@@ -20,13 +21,22 @@ gulp.task('serve', function() {
 
 	gulp.watch("*.htm*").on("change", browserSync.reload);
 	gulp.watch("*.php").on("change", browserSync.reload);
-	gulp.watch("css/*.css", ['css']);
+	gulp.watch("css/*.css", ['css','css-new']);
 });
 
 gulp.task('css', function() {
 	// gutil.log("See ess ess ing");
 	return gulp.src(paths.stylesheets)
 		.pipe(concat("all.css"))
+		.pipe(minifyCss({keepSpecialComments:0}))
+		.pipe(gulp.dest("./css/"))
+		.pipe(browserSync.stream());
+});
+
+gulp.task('css-new', function() {
+	// gutil.log("See ess ess ing");
+	return gulp.src(paths.stylesheets_new)
+		.pipe(concat("all-new.css"))
 		.pipe(minifyCss({keepSpecialComments:0}))
 		.pipe(gulp.dest("./css/"))
 		.pipe(browserSync.stream());
@@ -39,4 +49,4 @@ gulp.task('js', function() {
 	.pipe(gulp.dest("./js/"));
 })
 
-gulp.task('default', ['css','js','serve']);
+gulp.task('default', ['css','css-new','js','serve']);

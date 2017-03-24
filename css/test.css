@@ -104,23 +104,23 @@ nav li {
 
     text-align: center;
     text-decoration: none;
-    font-weight: normal;
+    font-weight: bold;
     font-size: .9em;
 
     background: white;
     color: black;
 }
 
-nav ul li.pink {
+.pink {
     background-color: LightPink;
 }
-nav ul li.grey {
+.grey {
     background-color: LightGrey;
 }
-nav ul li.green {
+.green {
     background-color: LightGreen;
 }
-nav ul li.purple {
+.purple {
     background-color: #ffccff;
 }
 
@@ -196,14 +196,19 @@ nav a:hover {
     font-size: 1.2em;
 }
 
-#message a, #message a:visited {
+#message a, #message a:visited,
+#content a, #content a:visited,
+#events-container .date a, #events-container .date a:visited {
     padding: 3px;
     color: white;
     background-color: black;
     text-decoration: underline;
 }
 
-#message a:hover, #message a:active {
+#message a:hover, #message a:active,
+#content a:hover, #content a:active,
+#events-container .date a:hover, #events-container .date a:active
+ {
     color: black;
     background-color: white;
     text-decoration: none;
@@ -220,6 +225,7 @@ nav a:hover {
 
 #events-container {
     width: 100%;
+    clear: both;
 }
 
 #events-inner div.poster {
@@ -287,20 +293,27 @@ nav a:hover {
     height: 100%;
 }
 
-#vip #message img, #godfather #message img {
-    width: 100%;
+#content {
     max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5%;
 }
 
-.footer {
-    font-size: 10px;
-    line-height: 12px;
-    text-align: center;
-    color: #AAAAAA;
-    margin-top: 10px;
+#content ul {
+    list-style-type: none;
+    font-size: 22px;
+    line-height: 30px;
+    padding-left: 0;
+}
+
+#content img {
+    display: block;
+    width: 100%;
 }
 
 #embed-outer {
+    clear: both;
     text-align: center;
     margin: 15px 10px;
 }
@@ -316,6 +329,27 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+#logo-container img.grow {
+    display: inline-block;
+    width: 100%;
+    padding: 2%;
+}
+
+#logo-container img.shrink {
+    display: inline-block;
+    width: 90%;
+    padding: 5%;
+    margin-left: 5%;
+}
+
+.footer {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #AAAAAA;
+    margin-top: 10px;
 }
 
 /* ===============
@@ -367,6 +401,7 @@ nav a:hover {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+        padding-top: 30px;
     }
 
     #events-inner div.poster {
@@ -420,21 +455,37 @@ nav a:hover {
 @media only screen and (min-width: 850px) {
 
     #message {
-        display: inline-block;
-        width: 350px;
-        margin: 0 auto;
+        /*margin: 0 auto;*/
+        margin: 0 280px 0 255px;
         padding-top: 20px;
-        clear: both;
+        /*clear: both;*/
+        clear: none;
         font-size: 20px;
         line-height: 30px;
+        padding-top: 90px;
     }
 
     #message h1 {
         font-size: 2em;
+        line-height: 1.1em;
     }
 
     #message h5 {
         font-size: 1.3em;
+    }
+
+    #logo-container {
+        padding-top: 50px;
+    }
+
+    #logo-container img.grow {
+        width: 51%;
+        padding: 2%;
+    }
+
+    #logo-container img.shrink {
+        width: 41%;
+        padding: 2%;
     }
 }
 
@@ -453,6 +504,13 @@ nav a:hover {
         margin-left: auto;
     }
 
+}
+
+@media only screen and (min-width: 1100px) {
+
+    #message {
+        /*width: 600px;*/
+    }
 }
 
 

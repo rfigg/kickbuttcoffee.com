@@ -73,7 +73,10 @@ textarea {
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
     background: black;
-    text-align: center;
+   /* background-attachment: fixed;
+    background-image: url(/img/kick_butt_website_background_08_14_2015.jpg);
+    background-size: cover;
+    background-position: center;*/
 }
 
 h5 {
@@ -94,34 +97,20 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: none;
 }
 
 nav li {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 6px 0;
 
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
     font-size: .9em;
 
     background: white;
     color: black;
-}
-
-.pink {
-    background-color: LightPink;
-}
-.grey {
-    background-color: LightGrey;
-}
-.green {
-    background-color: LightGreen;
-}
-.purple {
-    background-color: #ffccff;
 }
 
 nav a,
@@ -135,17 +124,19 @@ nav a:hover {
 }
 
 #logo {
+    /*width: 45%;*/
     width: 44%;
     float: left;
     position: relative;
-    top: -30px;
+    /*top: -35px;*/
+    top: -5px;
     z-index: 1000000;
-    max-width: 250px;
 }
 
 #logo img {
     width: 100%;
     padding: 7px;
+    max-width: 177px;
 }
 
 #signup {
@@ -153,18 +144,19 @@ nav a:hover {
     margin-top: 10px;
     margin-right: 10px;
     padding-top: 15px;
-    clear: right;
 }
 
 #social-container {
     float: right;
-    clear: right;
+    /*position: relative;*/
+    /*top: -10px;*/
 }
 
 #social-container ul {
     list-style-type: none;
     padding-right: 5px;
     padding-left: 5px;
+    /*padding: 0 1px 0 0  ;*/
     margin-top: 0;
 }
 
@@ -179,12 +171,6 @@ nav a:hover {
     margin-right: 10px;
     font-size: 1.2em;
     padding-top: 15px;
-    clear: right;
-}
-
-#message {
-    clear: both;
-    padding: 10px;
 }
 
 #message p {
@@ -192,40 +178,8 @@ nav a:hover {
     margin-top: 0;
 }
 
-#message h1 {
-    font-size: 1.2em;
-}
-
-#message a, #message a:visited,
-#content a, #content a:visited,
-#events-container .date a, #events-container .date a:visited {
-    padding: 3px;
-    color: white;
-    background-color: black;
-    text-decoration: underline;
-}
-
-#message a:hover, #message a:active,
-#content a:hover, #content a:active,
-#events-container .date a:hover, #events-container .date a:active
- {
-    color: black;
-    background-color: white;
-    text-decoration: none;
-    border-radius: 6px; 
-    padding: 3px;
-}
-
-#form-container {
-    clear: both;
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;   
-}
-
 #events-container {
     width: 100%;
-    clear: both;
 }
 
 #events-inner div.poster {
@@ -245,25 +199,16 @@ nav a:hover {
     margin-right: auto;
 }
 
-#contact-container {
-    display: inline-block;
-    margin: 0 auto;
-}
-
 #contact-container ul {
     padding-left: 0;
 } 
 
 #contact-container li {
     text-align: center;
-    display: block;
 }
 
-#contact-container a,
-#contact-container a:hover,
-#contact-container a:visited,
-#contact-container a:active
-{
+#contact-container a, #contact-container a:hover,
+#contact-container a:visited, #contact-container a:active {
     color: white;
 }
 
@@ -293,27 +238,20 @@ nav a:hover {
     height: 100%;
 }
 
-#content {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5%;
-}
-
-#content ul {
-    list-style-type: none;
-    font-size: 22px;
-    line-height: 30px;
-    padding-left: 0;
-}
-
-#content img {
-    display: block;
+#vip #message img, #godfather #message img {
     width: 100%;
+    max-width: 800px;
+}
+
+.footer {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #AAAAAA;
+    margin-top: 10px;
 }
 
 #embed-outer {
-    clear: both;
     text-align: center;
     margin: 15px 10px;
 }
@@ -344,13 +282,6 @@ nav a:hover {
     margin-left: 5%;
 }
 
-.footer {
-    font-size: 10px;
-    line-height: 12px;
-    text-align: center;
-    color: #AAAAAA;
-    margin-top: 10px;
-}
 
 /* ===============
     ALL: IE Fixes
@@ -361,14 +292,25 @@ nav a:hover {
 }
 
 /* ==========================================================================
-   **************************************************************************
    Media Queries
-   **************************************************************************
    ========================================================================== */
 
 @media only screen and (min-width: 420px) {
     .home #events-inner div.poster {
         width: 49.5%;
+    }
+
+    #social-container ul {
+        /*padding-right: 5px;
+        padding-left: 5px;*/
+    }
+
+    #social-container li {
+        /*padding: 1px;*/
+    }
+
+    #signup {
+        padding-left: 50px; 
     }
 }
 
@@ -378,11 +320,38 @@ nav a:hover {
     }
 }
 
+@media only screen and (min-width: 525px) {
+    #signup {
+        padding-left: 130px;
+    }
+
+    #social-container {
+        /*padding-left: 90px;*/
+        padding-left: 10px;
+    }
+    
+    #message p, #contact-container li {
+        font-size: 1.2em;
+    }
+
+}
+
 @media only screen and (min-width: 727px) {
 
 /* ===============
     Maximal Width
    =============== */
+
+    html {
+        background-color: transparent;
+        padding-top: 0;
+    }
+
+    body.home {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
 
     div {
         /*border: 1px solid red;*/
@@ -396,12 +365,127 @@ nav a:hover {
         display: none;
     }
 
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav li {
+        display: inline;
+        margin: 5px;
+        line-height: 26px;
+        background-color: transparent;
+        white-space: nowrap;
+    }
+
+    nav li a, nav li a:visited {
+        padding: 5px;
+        color: white;
+        font-size: 1.1em;
+        text-decoration: none;
+    }
+
+    nav li a:hover, nav li a:active {
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        border-radius: .5em; 
+    }
+
+    #logo {
+        display: inherit;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 250px;
+        height: 250px;
+    }
+    .live #logo,
+    #logos #logo {
+        position: relative;
+    }
+
+    #logo img {
+        width: 100%;
+        padding: 10px;
+        max-width: none;
+    }
+
+    #signup {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 170px;
+        padding: 10px;
+        text-align: right;
+    }
+
+    #menu-container {
+        position: absolute;
+        top: 0px;
+        right: 170px;
+        left: 250px;
+        padding: 10px;
+        max-width: 845px;
+    }
+
+    #social-container {
+        float: none;
+        position: absolute;
+        right: 0px;
+        top: 50px;
+        width: 50px;
+        padding: 0;
+    }
+
+    #social-container ul {
+        list-style-type: none;
+        padding-right: 10px;
+        padding-left: 5px;
+    }
+
+    #social-container li {
+        padding: 0 5px 15px 0;
+        display: block;
+    } 
+
+    #message {
+        position: absolute;
+        top: 100px;
+        left: 250px;
+        right: 100px;
+        bottom: 350px;
+        padding-top: 30px;
+        line-height: 2em;
+        z-index: -1;
+    }
+    .live #message,
+    #snob #message,
+    #logos #message {
+        top: 150px;
+        left: 0;
+        right: 0;
+        padding-top: 0;
+    }
+    #godfather #message,
+    #vip #message,
+    #logo #message {
+        top: 150px;
+    }
+
+    #message p {
+        font-size: 1.5em;
+        text-shadow: 1px 1px black;
+        margin-top: 2.7em;
+    }
 
     #events-container {
+        position: absolute;
+        top: 280px;
+        left: 10px;
+        right: 10px;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 30px;
     }
 
     #events-inner div.poster {
@@ -419,11 +503,37 @@ nav a:hover {
         display: none;
     }
 
-    .footer {
-        font-size: 12px;
-        margin-top: 25px;
+    #contact-container {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        padding-right: 20px;
+        z-index: 100;
+        background: rgba(0,0,0,0.4);
     }
 
+    #contact-container ul {
+        padding-left: 0;
+        list-style-type: inherit;
+    } 
+
+    #contact-container li {
+        display: inline;
+        padding-left: 20px;
+        white-space: nowrap;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 12px;
+        margin-left: 10px;
+        line-height: 14px;
+        text-align: left;
+    }
+
+    .live .footer,
     #logos .footer,
     .cookies .footer {
         position: fixed;
@@ -450,46 +560,42 @@ nav a:hover {
         left: 60px;
         right: 60px;   
     }
-}
-
-@media only screen and (min-width: 850px) {
-
-    #message {
-        /*margin: 0 auto;*/
-        margin: 0 280px 0 255px;
-        padding-top: 20px;
-        /*clear: both;*/
-        clear: none;
-        font-size: 20px;
-        line-height: 30px;
-        padding-top: 90px;
-    }
-
-    #message h1 {
-        font-size: 2em;
-        line-height: 1.1em;
-    }
-
-    #message h5 {
-        font-size: 1.3em;
-    }
 
     #logo-container {
         padding-top: 50px;
     }
 
     #logo-container img.grow {
+        display: inline-block;
         width: 51%;
         padding: 2%;
     }
 
     #logo-container img.shrink {
+        display: inline-block;
         width: 41%;
         padding: 2%;
     }
 }
 
 @media only screen and (min-width: 880px) {
+    
+    nav li a, nav li a:visited {
+        font-size: 1.1em;
+    }
+
+    nav li {
+        line-height: 30px;
+    }
+
+    #message {
+        padding-top: 0;
+    }
+
+    #message p {
+        font-size: 1.8em;
+        text-shadow: 1px 1px black;
+    }
 
     #events-inner div.date {
         font-size: 1em;
@@ -497,6 +603,9 @@ nav a:hover {
 }
 
 @media only screen and (min-width: 971px) {
+    #message p {
+        margin-top: 2em;
+    }
 
     #embed-outer {
         width: 100%;
@@ -506,13 +615,12 @@ nav a:hover {
 
 }
 
-@media only screen and (min-width: 1100px) {
-
-    #message {
-        /*width: 600px;*/
+@media only screen and (min-width: 1125px) {
+    nav li a, nav li a:visited {
+        font-size: 1.2em;
+        line-height: 35px;
     }
 }
-
 
 /* ==========================================================================
    Helper classes

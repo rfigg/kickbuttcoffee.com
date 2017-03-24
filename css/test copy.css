@@ -197,8 +197,7 @@ nav a:hover {
 }
 
 #message a, #message a:visited,
-#content a, #content a:visited,
-#events-container .date a, #events-container .date a:visited {
+#content a, #content a:visited {
     padding: 3px;
     color: white;
     background-color: black;
@@ -206,9 +205,7 @@ nav a:hover {
 }
 
 #message a:hover, #message a:active,
-#content a:hover, #content a:active,
-#events-container .date a:hover, #events-container .date a:active
- {
+#content a:hover, #content a:active {
     color: black;
     background-color: white;
     text-decoration: none;
@@ -225,7 +222,6 @@ nav a:hover {
 
 #events-container {
     width: 100%;
-    clear: both;
 }
 
 #events-inner div.poster {
@@ -313,7 +309,6 @@ nav a:hover {
 }
 
 #embed-outer {
-    clear: both;
     text-align: center;
     margin: 15px 10px;
 }
@@ -455,14 +450,13 @@ nav a:hover {
 @media only screen and (min-width: 850px) {
 
     #message {
-        /*margin: 0 auto;*/
-        margin: 0 280px 0 255px;
+        /*display: inline-block;*/
+        /*width: 350px;*/
+        margin: 0 auto;
         padding-top: 20px;
-        /*clear: both;*/
-        clear: none;
+        clear: both;
         font-size: 20px;
         line-height: 30px;
-        padding-top: 90px;
     }
 
     #message h1 {
